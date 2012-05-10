@@ -32,7 +32,7 @@ public:
     speed_just_changed = true;
     stable_speed = 0;
     Timer1.initialize();
-    Timer1.attachInterrupt(isr_set_speed, 120000);
+    Timer1.attachInterrupt(isr_set_speed, 100000);
   }
   void tick() {
     speed_just_changed = false;
